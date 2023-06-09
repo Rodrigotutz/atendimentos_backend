@@ -98,4 +98,13 @@ class App extends Controller {
         echo $this->view->render("app/preview");
     }
 
+    public function me(): void {
+        $this->view->addData([
+            "title" => "Página do usuário",
+            "user" => $this->user
+        ]);
+
+        echo $this->view->render("app/me");
+    }
+
 }

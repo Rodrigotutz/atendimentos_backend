@@ -1,11 +1,13 @@
-.login-form {
-    min-height: 100vh;
+.login-container {
     display: flex;
-    flex-direction: row;
+    min-height: 100vh;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-
+}
+.login-form {
+    width: 350px;
 }
 
 .login-form form {

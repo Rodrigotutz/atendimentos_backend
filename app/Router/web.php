@@ -8,11 +8,14 @@ $router->namespace("App\Controllers");
 
 $router->group(null);
 $router->get("/", "Web@home", "web.home");
+$router->get("/confirmar/{email}/{token}", "Web@confirm", "web.confirm");
 $router->post("/login", "Web@login", "web.login");
+$router->post("/cadastrar", "Web@register", "web.register");
 
 $router->group("app");
 $router->get("/", "App@index", "app.index");
 $router->get("/logout", "App@logout", "app.logout");
+$router->get("/perfil", "App@me", "app.me");
 
 $router->post("/cadastrar", "App@register", "app.register");
 $router->get("/ver/{id}", "App@preview", "app.preview");

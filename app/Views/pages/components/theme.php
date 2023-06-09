@@ -11,11 +11,13 @@
     </head>
     <body class="bg-dark text-white">
 
-        <main>
+        <main style="min-height: 100vh;">
             <?= $this->section("content") ?>
         </main>
 
         <script src="<?= asset('js/bootstrap.bundle.min.js') ?>"></script>
+
         <?= $this->section("scripts") ?>
+            
     </body>
 </html>

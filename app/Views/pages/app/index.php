@@ -2,11 +2,13 @@
 
 <div class="container mt-5 d-flex flex-row justify-content-between align-items-center">
     <h3>Atendimentos</h3>
-    <a href="<?= $router->route("app.logout") ?>" class="btn btn-light fw-bold"><i class="bi bi-door-open"></i> Sair</a>
+    <div class="d-flex gap-3 align-items-center">
+    <a href="<?= $router->route("app.me") ?>" class="btn btn-light"><i class="bi bi-person-circle"></i> Perfil</a>
+    </div>
 </div>
 
 <div class="container mt-5 d-flex justify-content-between align-items-center">    
-    <a href="" class="btn btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#login-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>
+    <a href="" class="btn btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>
     <form action="" class="d-flex input-group-sm">
         <input type="text" class="form-control input-sm" style="width: 200px;" placeholder="Pesquisar por...">
         <button class="btn btn-light" style="margin-left: -40px;"><i class="bi bi-search"></i></button>
