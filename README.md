@@ -1,4 +1,4 @@
-# Sistema de controle de Atendimentos Backend
+# Sistema de controle de atendimentos
 
 Para instalar todas as dependências
 
