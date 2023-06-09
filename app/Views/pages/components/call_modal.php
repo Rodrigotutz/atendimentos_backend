@@ -40,9 +40,8 @@
 
           <div class="col-6"> 
             <div class="mb-3">
-              <label for="sistem" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
-              <select id="sistem" class="form-select" name="sistem">
-                <option>---- Selecione o Sistema ---</option>
+              <label for="system" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
+              <select id="system" class="form-select" name="system">
                 <option value="SCPI 8">SCPI 8</option>
                 <option value="SCPI 9">SCPI 9</option>
               </select>
@@ -51,9 +50,8 @@
 
           <div class="col-6"> 
             <div class="mb-3">
-              <label for="sistem" class="form-label"> <span class="text-danger">*</span> Situação:</label>
-              <select id="sistem" class="form-select" name="sistem">
-                <option>---- Selecione a Situação ---</option>
+              <label for="situation" class="form-label"> <span class="text-danger">*</span> Situação:</label>
+              <select id="situation" class="form-select" name="situation">
                 <option value="Em Andamento">Em Andamento</option>
                 <option value="Resolvido">Resolvido</option>
                 <option value="Encaminhado">Encaminhado</option>

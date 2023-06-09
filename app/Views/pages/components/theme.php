@@ -11,7 +11,7 @@
     </head>
     <body class="bg-dark text-white">
 
-        <main style="min-height: 100vh;">
+        <main>
             <?= $this->section("content") ?>
         </main>
 

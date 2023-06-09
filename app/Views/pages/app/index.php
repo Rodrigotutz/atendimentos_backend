@@ -19,7 +19,7 @@
     <small class="text-<?= $class ?>"><?= $message ?></small>
 </div>
 
-<?php $this->insert("components/modal") ?>
+<?php $this->insert("components/call_modal") ?>
 
 <div class="container mt-3 mb-5 pb-5">
 

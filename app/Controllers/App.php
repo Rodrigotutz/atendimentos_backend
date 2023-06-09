@@ -48,6 +48,8 @@ class App extends Controller {
         $name = filter_var($data['name'], FILTER_DEFAULT);
         $email = filter_var($data['email'], FILTER_VALIDATE_EMAIL);
         $entity = filter_var($data['entity'], FILTER_DEFAULT);
+        $system = filter_var($data['system'], FILTER_DEFAULT);
+        $situation = filter_var($data['situation'], FILTER_DEFAULT);
         $case = filter_var($data['case'], FILTER_DEFAULT);
 
         if(!$atNumber || !$name || !$email || !$entity || !$case) {
@@ -60,6 +62,8 @@ class App extends Controller {
         $this->call->name = $name;
         $this->call->email = $email;
         $this->call->entity = $entity;
+        $this->call->system = $system;
+        $this->call->situation = $situation;
         $this->call->call_case = $case;
 
         if(!$this->call->save()) {
