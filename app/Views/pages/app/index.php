@@ -1,15 +1,18 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="container mt-5 d-flex flex-row justify-content-between align-items-center">
+<div class="container d-flex flex-row justify-content-between align-items-center">
     <h3>Atendimentos</h3>
 </div>
 
 <div class="container mt-5 d-flex justify-content-between align-items-center">    
-    <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>
-    <!--<form action="" class="d-flex input-group-sm">
-        <input type="text" class="form-control input-sm" style="width: 200px;" placeholder="Pesquisar por...">
-        <button class="btn btn-sm btn-light" style="margin-left: -40px;"><i class="bi bi-search"></i></button>
-    </form>-->
+    <?php if($_SESSION['userType'] != "user"): ?>
+        <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>       
+    <?php endif; ?>
+    <form method="POST" class="d-flex">
+        <div class="form-outline">
+            <input name="query" type="search" id="query" class="form-control form-control-sm" placeholder="Pesquisar por..." />
+        </div>
+    </form>
 </div>
 
 <?php $this->insert("components/call_modal") ?>
@@ -18,7 +21,7 @@
 
     <?php if(!$calls): ?>
         <div class="text-center mt-5 pt-5">
-            <h3 class="text-muted">Não existem atendimentos...</h3>
+            <h3 class="text-muted">Não foram encontrados atendimentos...</h3>
         </div>
     <?php else: ?>
     <div class="table-responsive">
@@ -50,8 +53,4 @@
     </div>
     <?php endif; ?>
 </div>
-
-<?= $this->start("sidebar") ?>
-    <?php $this->insert("components/sidebar") ?>
-<?= $this->stop() ?>
 

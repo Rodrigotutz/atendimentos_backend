@@ -1,6 +1,6 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="container d-flex justify-content-center align-items-center flex-column text-center" style="min-height: 100vh;">
+<div class="container d-flex justify-content-center align-items-center flex-column text-center" style="min-height: 90vh;">
     <div class="mb-3">
         <h1><?= $user->first_name ?> <?= $user->last_name ?></h1>
         <h1><?= $user->email ?></h1>
@@ -11,6 +11,3 @@
     </div>
 </div>
 
-<?= $this->start("sidebar") ?>
-    <?php $this->insert("components/sidebar") ?>
-<?= $this->stop() ?>

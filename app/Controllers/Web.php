@@ -51,8 +51,8 @@ class Web extends Controller {
             $this->router->redirect("web.home", ["warning" => "user-not-confirmed"]);
         }
 
-        $_SESSION['userId'] = $userByEmail->id;
-
+        $_SESSION["userId"] = $userByEmail->id;
+        $_SESSION['userType'] = $userByEmail->type;
         $this->router->redirect("app.index");
     }
 

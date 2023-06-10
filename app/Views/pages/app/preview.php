@@ -94,10 +94,6 @@
 
 </div>
 
-<?= $this->start("sidebar") ?>
-    <?php $this->insert("components/sidebar") ?>
-<?= $this->stop() ?>
-
 <?= $this->start("scripts") ?>
   <script src="<?= asset("js/app.js") ?>"></script>
 <?= $this->stop() ?>

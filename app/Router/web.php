@@ -6,14 +6,17 @@ $router = new Router(getenv("APP_URL"), "@");
 
 $router->namespace("App\Controllers");
 
+/*********ROTAS HOME **********/
 $router->group(null);
 $router->get("/", "Web@home", "web.home");
 $router->get("/confirmar/{email}/{token}", "Web@confirm", "web.confirm");
 $router->post("/login", "Web@login", "web.login");
 $router->post("/cadastrar", "Web@register", "web.register");
 
+/*********ROTAS APP **********/
 $router->group("app");
 $router->get("/", "App@index", "app.index");
+$router->post("/", "App@index", "app.index");
 $router->get("/logout", "App@logout", "app.logout");
 $router->get("/perfil", "App@me", "app.me");
 $router->get("/deletar/{id}", "App@delete", "app.delete");
@@ -21,6 +24,10 @@ $router->get("/deletar/{id}", "App@delete", "app.delete");
 $router->get("/ver/{id}", "App@preview", "app.preview");
 $router->post("/cadastrar", "App@register", "app.register");
 $router->post("/atualizar", "App@update", "app.update");
+
+/*********ROTAS ADMIN **********/
+$router->group("admin");
+$router->get("/", "Admin@index", "admin.index");
 
 $router->group("api/v1");
 $router->get("/", "Api@show", "api.show");

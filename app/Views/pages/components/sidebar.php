@@ -16,6 +16,9 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a href="<?= $router->route("app.index") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-bookmark-plus-fill"></i> Atendimentos</a></li>
           <li class="nav-item"><a href="<?= $router->route("app.me") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-person-circle"></i> Perfil</a></li>
+          <?php if($_SESSION['userType'] === "admin"): ?>
+            <li class="nav-item"><a href="<?= $router->route("admin.index") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-gear-fill"></i> Adminstrativo</a></li>            
+          <?php endif; ?>
         </ul>
         <a href="<?= $router->route("app.logout") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-door-open-fill"></i> Sair</a>
       </div>

@@ -20,9 +20,18 @@ class App extends Controller {
         $this->call = new CAlls();
     }
 
-    public function index() {
+    public function index($data){
+        $query = null;
+        if(isset($data['query'])) {
+            $query = $data['query'];
+        }
+        $calls = null;
 
-        $calls = $this->call->find()->order("id DESC")->limit(5)->fetch(true);
+        if(!isset($data['query'])) {
+            $calls = $this->call->find()->order("id DESC")->limit(5)->fetch(true);
+        } else {
+            $calls = $this->call->find("(name LIKE :query) OR (at_number LIKE '%$query%') OR (situation LIKE :query) OR (entity LIKE :query) OR (call_case LIKE :query)", "query=%{$query}%")->fetch(true);
+        }
 
         if(!$calls) {   
             $calls = null;
@@ -30,7 +39,7 @@ class App extends Controller {
 
         $this->view->addData([
             "title" => "Atendimentos",
-            "calls" => $calls
+            "calls" => $calls,
         ]);
         echo $this->view->render("app/index");
     }
@@ -150,5 +159,4 @@ class App extends Controller {
         ]);
         
     }
-
 }
