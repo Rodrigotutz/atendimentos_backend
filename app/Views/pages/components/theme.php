@@ -11,12 +11,20 @@
     </head>
     <body class="bg-dark text-white">
 
+        <div class="message-component alert alert-<?= $class ?> fw-bold">
+            <span class="text-<?= $class ?>"><?= $message ?></span>
+        </div>
+
+        <nav class="sidebar-app">
+            <?= $this->section("sidebar") ?>
+        </nav>
+
         <main>
             <?= $this->section("content") ?>
         </main>
-
+        
         <script src="<?= asset('js/bootstrap.bundle.min.js') ?>"></script>
-
+        <script src="<?= asset('js/hideMsg.js') ?>"></script>
         <?= $this->section("scripts") ?>
             
     </body>

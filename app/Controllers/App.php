@@ -67,7 +67,9 @@ class App extends Controller {
         $this->call->call_case = $case;
 
         if(!$this->call->save()) {
-            dd("Erro ao salvar");
+            $this->router->redirect("app.index", [
+                'error' => "invalid-fields"
+            ]);
         }
 
         $this->router->redirect("app.index", [
@@ -109,6 +111,44 @@ class App extends Controller {
         ]);
 
         echo $this->view->render("app/me");
+    }
+
+    public function delete($data) {
+        $id = filter_var($data['id'], FILTER_DEFAULT);
+
+        $deleteCall = $this->call->findById($id);
+
+        if(!$deleteCall) {
+            $this->router->redirect("app.index", [
+                "error" => "call-not-found"
+            ]);
+        }
+
+        $deleteCall->destroy();
+
+        $this->router->redirect("app.index", [
+            "success" => "call-deleted"
+        ]);
+    }
+
+    public function update($data) {
+        $callById = $this->call->findById($data['id']); 
+        
+        $callById->at_number = $data['atNumber'];
+        $callById->name = $data['name'];
+        $callById->email = $data['email'];
+        $callById->entity = $data['entity'];
+        $callById->system = $data['system'];
+        $callById->situation = $data['situation'];
+        $callById->call_case =$data['case'];
+        
+        $callById->save();
+
+        $this->router->redirect("app.preview", [
+            "id" => $data['id'],
+            "success" => "call-updated"
+        ]);
+        
     }
 
 }

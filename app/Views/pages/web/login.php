@@ -3,9 +3,6 @@
 <div class="container login-container">
     <form class="login-form bg-white text-dark p-4 border rounded-3  shadow-lg" action="<?= $router->route("web.login") ?>" method="POST">
         <h2 class="text-center">Entrar</h2>
-        <div class="text-center">
-            <small class="text-<?= $class ?>"><?= $message ?></small>
-        </div>
 
         <div class="mt-3">
             <input name="email" type="email" class="form-control" placeholder="Insira seu e-mail">

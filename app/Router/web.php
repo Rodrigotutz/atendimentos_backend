@@ -16,9 +16,11 @@ $router->group("app");
 $router->get("/", "App@index", "app.index");
 $router->get("/logout", "App@logout", "app.logout");
 $router->get("/perfil", "App@me", "app.me");
+$router->get("/deletar/{id}", "App@delete", "app.delete");
 
-$router->post("/cadastrar", "App@register", "app.register");
 $router->get("/ver/{id}", "App@preview", "app.preview");
+$router->post("/cadastrar", "App@register", "app.register");
+$router->post("/atualizar", "App@update", "app.update");
 
 $router->group("api/v1");
 $router->get("/", "Api@show", "api.show");

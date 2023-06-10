@@ -10,3 +10,7 @@
         <a href="<?= $router->route("app.logout") ?>" class="btn btn-light fw-bold"><i class="bi bi-door-open"></i> Sair</a>
     </div>
 </div>
+
+<?= $this->start("sidebar") ?>
+    <?php $this->insert("components/sidebar") ?>
+<?= $this->stop() ?>

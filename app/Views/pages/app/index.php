@@ -2,21 +2,14 @@
 
 <div class="container mt-5 d-flex flex-row justify-content-between align-items-center">
     <h3>Atendimentos</h3>
-    <div class="d-flex gap-3 align-items-center">
-    <a href="<?= $router->route("app.me") ?>" class="btn btn-light"><i class="bi bi-person-circle"></i> Perfil</a>
-    </div>
 </div>
 
 <div class="container mt-5 d-flex justify-content-between align-items-center">    
-    <a href="" class="btn btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>
-    <form action="" class="d-flex input-group-sm">
+    <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>
+    <!--<form action="" class="d-flex input-group-sm">
         <input type="text" class="form-control input-sm" style="width: 200px;" placeholder="Pesquisar por...">
-        <button class="btn btn-light" style="margin-left: -40px;"><i class="bi bi-search"></i></button>
-    </form>
-</div>
-
-<div class="container mt-3">
-    <small class="text-<?= $class ?>"><?= $message ?></small>
+        <button class="btn btn-sm btn-light" style="margin-left: -40px;"><i class="bi bi-search"></i></button>
+    </form>-->
 </div>
 
 <?php $this->insert("components/call_modal") ?>
@@ -57,4 +50,8 @@
     </div>
     <?php endif; ?>
 </div>
+
+<?= $this->start("sidebar") ?>
+    <?php $this->insert("components/sidebar") ?>
+<?= $this->stop() ?>
 
