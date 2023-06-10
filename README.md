@@ -6,6 +6,4 @@ Para instalar todas as dependências
     composer install
 ```
 
-Acessar o sistema: 
-
-[Site](https://atendimentos.rodrigotutz.com)
+[Acessar o sistema: ](https://atendimentos.rodrigotutz.com)
