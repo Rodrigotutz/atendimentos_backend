@@ -8,6 +8,7 @@ editButton.addEventListener("click", () => {
     let system = document.getElementById("system").disabled = false
     let situation = document.getElementById("situation").disabled = false
     let callCase = document.getElementById("case").disabled = false
+    let generalError = document.getElementById("generalError").disabled = false
 
     let saveButton = document.getElementById("saveButton").classList.remove("d-none")
     editButton.classList.add("d-none")

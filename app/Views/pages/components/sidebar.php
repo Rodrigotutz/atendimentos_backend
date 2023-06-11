@@ -1,4 +1,3 @@
-
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-lg bg-trasparent text-white" data-bs-toggle="modal" data-bs-target="#modal">
     <i class="bi bi-list"></i>
@@ -16,7 +15,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a href="<?= $router->route("app.index") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-bookmark-plus-fill"></i> Atendimentos</a></li>
           <li class="nav-item"><a href="<?= $router->route("app.me") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-person-circle"></i> Perfil</a></li>
-          <?php if($_SESSION['userType'] === "admin"): ?>
+          <?php if($_SESSION['userType']  === "admin"): ?>
             <li class="nav-item"><a href="<?= $router->route("admin.index") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-gear-fill"></i> Adminstrativo</a></li>            
           <?php endif; ?>
         </ul>

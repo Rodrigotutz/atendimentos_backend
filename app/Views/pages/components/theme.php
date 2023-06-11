@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="<?= asset("css/bootstrap.min.css") ?>">
         <link rel="stylesheet" href="<?= asset("css/style.css") ?>">
     </head>
-    <body class="bg-dark text-white">
+    <body class="bg-general text-white">
 
         <div class="message-component alert alert-<?= $class ?> fw-bold">
             <span class="text-<?= $class ?>"><?= $message ?></span>

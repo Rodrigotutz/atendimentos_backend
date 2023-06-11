@@ -1,6 +1,6 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="container d-flex flex-column justify-content-center align-items-center" style="min-height: 90vh;">
+<div class="container d-flex flex-column justify-content-center align-items-center mb-5" style="min-height: 90vh;">
     <h3>Dados do chamado:</h3>
     
     <form method="POST" action="<?= $router->route("app.update") ?>" class="container mt-3">
@@ -61,10 +61,19 @@
             <textarea name="case" class="form-control" id="case" rows="5" disabled><?= $call->call_case ?></textarea>
         </div>
 
+        <div class="mb-3 form-check small">
+          <?php if($call->general_error): ?>
+            <input name="generalError" type="checkbox" class="form-check-input" id="generalError" checked disabled>
+          <?php else: ?>
+            <input name="generalError" type="checkbox" class="form-check-input" id="generalError" disabled>
+          <?php endif; ?>
+            <label class="form-check-label" for="generalError">Erro Geral?</label>
+        </div>
+
         <div class="d-flex justify-content-between">
             <a href="<?= $router->route("app.index") ?>" class="btn btn-sm btn-light fw-bold"><i class="bi bi-arrow-left "></i> Voltar</a>
             <div class="d-flex gap-3">
-              <?php if($_SESSION['userType'] != "user"): ?>
+              <?php if($_SESSION['userType'] != "guest"): ?>
                 <button type="submit" id="saveButton" class="d-none btn btn-sm btn-success fw-bold"><i class="bi bi-pencil-square"></i> Salvar</button>
                 <button type="button" id="editButton" class="btn btn-sm btn-primary fw-bold"><i class="bi bi-pencil-square"></i> Editar</button>
                 <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-trash-fill"></i> Excluir</a>

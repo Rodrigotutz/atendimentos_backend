@@ -10,6 +10,10 @@ class User extends DataLayer {
         parent::__construct("users" , ["first_name", "last_name", "email", "password"], timestamps:true);
     }
 
+    public function calls() {
+        return (new Calls())->find("user_id = :uid", "uid={$this->id}")->fetch(true);
+    }
+
     public function save(): bool {
 
         if(!$this->validadeUser() || !$this->validateEmail() || !$this->validatePassword() || !parent::save()) {

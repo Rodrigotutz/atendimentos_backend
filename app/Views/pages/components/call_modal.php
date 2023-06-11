@@ -65,6 +65,11 @@
             <label for="exampleFormControlTextarea1" class="form-label"> <span class="text-danger">*</span> Caso:</label>
             <textarea name="case" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
           </div>
+
+          <div class="mb-3 form-check small">
+            <input name="generalError" type="checkbox" class="form-check-input" id="generalError">
+            <label class="form-check-label" for="generalError">Erro Geral?</label>
+          </div>
           
           <div class="modal-footer" style="border: none;">
             <button type="submit" class="btn btn-dark">Criar</button>

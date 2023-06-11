@@ -22,13 +22,26 @@ class App extends Controller {
 
     public function index($data){
         $query = null;
+        $registers = 0;
+
         if(isset($data['query'])) {
             $query = $data['query'];
         }
         $calls = null;
 
-        if(!isset($data['query'])) {
-            $calls = $this->call->find()->order("id DESC")->limit(5)->fetch(true);
+        if ($qtdRegisters = $this->call->find()->count()) {
+            $registers = $qtdRegisters;
+        }
+
+        if(!isset($data['query']) && $_SESSION['userType'] == 'admin') {
+            $calls = $this->call->find()->order("id DESC")->limit(15)->fetch(true);
+        } elseif(!isset($data['query']) && $_SESSION['userType'] == 'user') {
+            $calls = $this->user->calls();
+        } elseif(!isset($data['query']) && $_SESSION['userType'] == 'guest') {
+            $calls = null;
+            if(isset($data['query']) ) {
+                $calls = $this->call->find("(at_number LIKE '%$query%')", "query=%{$query}%")->order("id DESC")->fetch(true);
+            }
         } else {
             $calls = $this->call->find("(name LIKE :query) OR (at_number LIKE '%$query%') OR (situation LIKE :query) OR (system LIKE :query) OR (entity LIKE :query) OR (call_case LIKE :query)", "query=%{$query}%")->order("id DESC")->fetch(true);
         }
@@ -40,6 +53,7 @@ class App extends Controller {
         $this->view->addData([
             "title" => "Atendimentos",
             "calls" => $calls,
+            "registers" => $registers
         ]);
         echo $this->view->render("app/index");
     }
@@ -52,7 +66,7 @@ class App extends Controller {
     }
 
     public function register($data) {
-
+        $userId = $this->user->id;
         $atNumber = filter_var($data['atNumber'], FILTER_DEFAULT);
         $name = filter_var($data['name'], FILTER_DEFAULT);
         $email = filter_var($data['email'], FILTER_VALIDATE_EMAIL);
@@ -67,6 +81,7 @@ class App extends Controller {
             ]);
         }
 
+        $this->call->user_id = $userId;
         $this->call->at_number = $atNumber;
         $this->call->name = $name;
         $this->call->email = $email;
@@ -74,7 +89,11 @@ class App extends Controller {
         $this->call->system = $system;
         $this->call->situation = $situation;
         $this->call->call_case = $case;
-
+        
+        if(isset($data['generalError'])) {
+            $this->call->general_error = true;
+        }
+        
         if(!$this->call->save()) {
             $this->router->redirect("app.index", [
                 'error' => "invalid-fields"
@@ -150,7 +169,12 @@ class App extends Controller {
         $callById->system = $data['system'];
         $callById->situation = $data['situation'];
         $callById->call_case =$data['case'];
+        $callById->general_error =$data['generalError'];
         
+        if(isset($data['generalError'])) {
+            $callById->general_error = true;
+        }
+
         $callById->save();
 
         $this->router->redirect("app.preview", [
