@@ -30,7 +30,7 @@ class App extends Controller {
         if(!isset($data['query'])) {
             $calls = $this->call->find()->order("id DESC")->limit(5)->fetch(true);
         } else {
-            $calls = $this->call->find("(name LIKE :query) OR (at_number LIKE '%$query%') OR (situation LIKE :query) OR (entity LIKE :query) OR (call_case LIKE :query)", "query=%{$query}%")->fetch(true);
+            $calls = $this->call->find("(name LIKE :query) OR (at_number LIKE '%$query%') OR (situation LIKE :query) OR (system LIKE :query) OR (entity LIKE :query) OR (call_case LIKE :query)", "query=%{$query}%")->order("id DESC")->fetch(true);
         }
 
         if(!$calls) {   

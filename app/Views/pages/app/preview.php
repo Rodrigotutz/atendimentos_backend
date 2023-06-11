@@ -8,14 +8,14 @@
         <div class="row">
           <div class="col-6">
             <div class="mb-3">
-              <label for="serviceNumber" class="form-label"> <span class="text-danger">*</span> Número do at:</label>
+              <label for="serviceNumber" class="form-label"> <span class="text-danger">*</span> Atendimento:</label>
               <input name="atNumber" type="text" class="form-control" id="serviceNumber" value="<?= $call->at_number ?>" disabled>
             </div>
           </div>
 
           <div class="col-6">
             <div class="mb-3">
-              <label for="name" class="form-label"> <span class="text-danger">*</span> Nome:</label>
+              <label for="name" class="form-label"> <span class="text-danger">*</span> Relator:</label>
               <input name="name" type="text" class="form-control" id="name" value="<?= $call->name ?>" disabled>
             </div>
           </div>
@@ -64,9 +64,11 @@
         <div class="d-flex justify-content-between">
             <a href="<?= $router->route("app.index") ?>" class="btn btn-sm btn-light fw-bold"><i class="bi bi-arrow-left "></i> Voltar</a>
             <div class="d-flex gap-3">
-              <button type="submit" id="saveButton" class="d-none btn btn-sm btn-success fw-bold"><i class="bi bi-pencil-square"></i> Salvar</button>
-              <button type="button" id="editButton" class="btn btn-sm btn-primary fw-bold"><i class="bi bi-pencil-square"></i> Editar</button>
-              <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-trash-fill"></i> Excluir</a>
+              <?php if($_SESSION['userType'] != "user"): ?>
+                <button type="submit" id="saveButton" class="d-none btn btn-sm btn-success fw-bold"><i class="bi bi-pencil-square"></i> Salvar</button>
+                <button type="button" id="editButton" class="btn btn-sm btn-primary fw-bold"><i class="bi bi-pencil-square"></i> Editar</button>
+                <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-trash-fill"></i> Excluir</a>
+              <?php endif; ?>
             </div>
         </div>
 
@@ -83,6 +85,7 @@
             <div class="modal-body">
               <h4 class="text-center">Tem certeza que deseja excluir?</h4>
             </div>
+
             <div class="modal-footer" style="border: none;">
               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancelar</button>
               <button type="submit" class="btn btn-danger">Excluir</button>

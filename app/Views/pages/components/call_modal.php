@@ -19,7 +19,7 @@
 
           <div class="col-6">
             <div class="mb-3">
-              <label for="name" class="form-label"> <span class="text-danger">*</span> Nome:</label>
+              <label for="name" class="form-label"> <span class="text-danger">*</span> Relator:</label>
               <input name="name" type="text" class="form-control" id="name">
             </div>
           </div>
