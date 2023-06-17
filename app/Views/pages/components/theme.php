@@ -17,11 +17,11 @@
             <span class="text-<?= $class ?>"><?= $message ?></span>
         </div>
 
-        <nav class="sidebar-app">
-            <?php if(isset($_SESSION['userId'])): ?>
+        <?php if(isset($_SESSION['userId'])): ?>
+            <nav class="sidebar-app">
                 <?php $this->insert("components/sidebar") ?>
-            <?php endif; ?>
-        </nav>
+            </nav>
+        <?php endif; ?>
 
         <main>
             <?= $this->section("content") ?>

@@ -7,7 +7,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="container" action="<?= $router->route("web.register") ?>" method="POST">
+        <form class="container" action="<?= $router->route("auth.register") ?>" method="POST">
 
           <div class="row">
             <div class="col-6">

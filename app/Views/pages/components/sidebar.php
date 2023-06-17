@@ -19,7 +19,7 @@
             <li class="nav-item"><a href="<?= $router->route("admin.index") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-gear-fill"></i> Adminstrativo</a></li>            
           <?php endif; ?>
         </ul>
-        <a href="<?= $router->route("app.logout") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-door-open-fill"></i> Sair</a>
+        <a href="<?= $router->route("auth.logout") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-door-open-fill"></i> Sair</a>
       </div>
     </div>
   </div>

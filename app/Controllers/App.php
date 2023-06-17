@@ -4,12 +4,14 @@ namespace App\Controllers;
 
 use App\Models\User;
 use App\Models\Calls;
+use DateTime;
 use Rodrigotutz\Controller;
 
 class App extends Controller {
 
     private $user;
     private $call;
+    private $created_at;
 
     public function __construct($router) {
         parent::__construct($router, dirname(__DIR__, 1). "/Views/pages/");
@@ -18,6 +20,7 @@ class App extends Controller {
         }
         $this->user = (new User())->findById($_SESSION['userId']);
         $this->call = new CAlls();
+        $this->created_at = (new DateTime($this->user->created_at))->format("d/m/Y");
     }
 
     public function index($data){
@@ -57,14 +60,7 @@ class App extends Controller {
         ]);
         echo $this->view->render("app/index");
     }
-
-    public function logout() {
-        session_destroy();
-        $this->router->redirect("web.home",[
-            "info" => "logout"
-        ]);
-    }
-
+    
     public function register($data) {
         $userId = $this->user->id;
         $atNumber = filter_var($data['atNumber'], FILTER_DEFAULT);
@@ -135,7 +131,8 @@ class App extends Controller {
     public function me(): void {
         $this->view->addData([
             "title" => "Página do usuário",
-            "user" => $this->user
+            "user" => $this->user,
+            "created_at" => $this->created_at
         ]);
 
         echo $this->view->render("app/me");

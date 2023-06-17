@@ -1,7 +1,7 @@
 <?php $this->layout("components/theme") ?>
 
 <div class="container login-container">
-    <form class="login-form bg-white text-dark p-4 border rounded-3  shadow-lg" action="<?= $router->route("web.login") ?>" method="POST">
+    <form class="login-form bg-white text-dark p-4 border rounded-3  shadow-lg" action="<?= $router->route("auth.login") ?>" method="POST">
         <h2 class="text-center">Entrar</h2>
 
         <div class="mt-3">
@@ -16,7 +16,11 @@
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-dark">Entrar</button>
-        </div>  
+        </div> 
+        
+        <div class="small mt-3">
+            <small>Esqueceu a senha? <a href="<?= $router->route("web.alterpass") ?>">Alterar senha!</a></small>
+        </div>
     </form>
     <div class="mt-3 text-start">
         <small>Não tem uma conta? <a href="" class="text-light" data-bs-toggle="modal" data-bs-target="#login-modal">Crie aqui!</a></small>

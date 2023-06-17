@@ -9,15 +9,23 @@ $router->namespace("App\Controllers");
 /*********ROTAS HOME **********/
 $router->group(null);
 $router->get("/", "Web@home", "web.home");
-$router->get("/confirmar/{email}/{token}", "Web@confirm", "web.confirm");
-$router->post("/login", "Web@login", "web.login");
-$router->post("/cadastrar", "Web@register", "web.register");
+$router->get("/alterarsenha", "Web@alterPass", "web.alterpass");
+$router->get("/novasenha/{email}/{token}", "Web@newKey", "web.newkey");
+$router->post("/novasenha/{email}/{token}", "Web@newKey", "web.newkey");
+
+/********* ROTAS AUTH *********/
+$router->group("auth");
+$router->post("/login", "Auth@login", "auth.login");
+$router->get("/logout", "Auth@logout", "auth.logout");
+$router->post("/cadastrar", "Auth@register", "auth.register");
+$router->get("/confirmar/{email}/{token}", "Auth@confirm", "auth.confirm");
+$router->post("/resetpass", "Auth@resetPass",  "auth.resetpass");
+$router->post("/newpass", "Auth@newPass", "auth.newpass");
 
 /*********ROTAS APP **********/
 $router->group("app");
 $router->get("/", "App@index", "app.index");
 $router->post("/", "App@index", "app.index");
-$router->get("/logout", "App@logout", "app.logout");
 $router->get("/perfil", "App@me", "app.me");
 $router->get("/deletar/{id}", "App@delete", "app.delete");
 
@@ -31,8 +39,15 @@ $router->get("/", "Admin@index", "admin.index");
 
 $router->group("api/v1");
 $router->get("/", "Api@show", "api.show");
+
+/******* ROTAS DE ERROS ********/
+$router->group("oops");
+$router->get("/{errcode}", "Error@index", "error.index");
+
 $router->dispatch();
 
 if($router->error()) {
-    dd($router->error());
+    $router->redirect("error.index", [
+        "errcode" => $router->error()
+    ]);
 }

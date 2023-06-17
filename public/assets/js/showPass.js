@@ -23,3 +23,4 @@ showPassRegister.addEventListener("click", () => {
         passRe.type = "password"
     }
 })
+
