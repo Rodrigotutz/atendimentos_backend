@@ -14,7 +14,8 @@ CREATE TABLE `calls` (
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `situation` (
+
+CREATE TABLE `situations` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
@@ -22,7 +23,8 @@ CREATE TABLE `situation` (
   `updated_at` timestamp NULL DEFAULT NULL ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `system` (
+
+CREATE TABLE `systems` (
   `id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `description` text NOT NULL,
@@ -47,10 +49,10 @@ ALTER TABLE `calls`
   ADD PRIMARY KEY (`id`),
   ADD KEY `user_id` (`user_id`);
 
-ALTER TABLE `situation`
+ALTER TABLE `situations`
   ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `system`
+ALTER TABLE `systems`
   ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `users`
@@ -59,10 +61,10 @@ ALTER TABLE `users`
 ALTER TABLE `calls`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `situation`
+ALTER TABLE `situations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `system`
+ALTER TABLE `systems`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 ALTER TABLE `users`

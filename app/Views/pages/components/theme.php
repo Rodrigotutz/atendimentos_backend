@@ -10,6 +10,7 @@
         
         <link rel="stylesheet" href="<?= asset("css/bootstrap.min.css") ?>">
         <link rel="stylesheet" href="<?= asset("css/style.css") ?>">
+        <script src="//code.jivosite.com/widget/yMCW4wGa9c" async></script>
     </head>
     <body class="bg-general text-white">
 
@@ -28,6 +29,5 @@
         <script src="<?= asset('js/bootstrap.bundle.min.js') ?>"></script>
         <script src="<?= asset('js/hideMsg.js') ?>"></script>
         <?= $this->section("scripts") ?>
-            
     </body>
 </html>
