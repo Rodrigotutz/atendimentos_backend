@@ -17,11 +17,9 @@
             <span class="text-<?= $class ?>"><?= $message ?></span>
         </div>
 
-        <?php if(isset($_SESSION['userId'])): ?>
-            <nav class="sidebar-app">
-                <?php $this->insert("components/sidebar") ?>
-            </nav>
-        <?php endif; ?>
+        <nav class="sidebar-app">
+            <?php $this->insert("components/sidebar") ?>
+        </nav>
 
         <main>
             <?= $this->section("content") ?>

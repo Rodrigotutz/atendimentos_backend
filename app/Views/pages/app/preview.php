@@ -1,6 +1,6 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="container d-flex flex-column justify-content-center align-items-center mb-5" style="min-height: 90vh;">
+<div class="container d-flex flex-column justify-content-center align-items-center mb-5" style="min-height: 100vh;">
     <h3>Dados do chamado:</h3>
     
     <form method="POST" action="<?= $router->route("app.update") ?>" class="container mt-3">
@@ -39,7 +39,9 @@
               <label for="system" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
               <select id="system" class="form-select" name="system" disabled>
                 <option value="<?= $call->system ?>"><?= $call->system ?></option>
-                <option value="SCPI 8">SCPI 8</option>
+                <?php foreach($systems as $system): ?>
+                  <option value="<?= $system->title ?>"><?= $system->title ?></option>
+                <?php endforeach; ?>
               </select>
             </div>
           </div>
@@ -49,8 +51,9 @@
               <label for="situation" class="form-label"> <span class="text-danger">*</span> Situação:</label>
               <select id="situation" class="form-select" name="situation" disabled>
                 <option value="<?= $call->situation ?>"><?= $call->situation ?></option>
-                <option value="Encaminhado">Encaminhado</option>
-                <option value="Aguardando Banco">Aguardando Banco</option>
+                <?php foreach($situations as $sistuation): ?>
+                  <option value="<?= $sistuation->title ?>"><?= $sistuation->title ?></option>
+                <?php endforeach; ?>
               </select>
             </div>
           </div>
@@ -75,8 +78,11 @@
             <div class="d-flex gap-3">
               <?php if($_SESSION['userType'] != "guest"): ?>
                 <button type="submit" id="saveButton" class="d-none btn btn-sm btn-success fw-bold"><i class="bi bi-pencil-square"></i> Salvar</button>
-                <button type="button" id="editButton" class="btn btn-sm btn-primary fw-bold"><i class="bi bi-pencil-square"></i> Editar</button>
-                <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-trash-fill"></i> Excluir</a>
+
+                <?php if($call->user_id === $_SESSION["userId"] || $_SESSION['userType'] === "admin"):?>
+                  <button type="button" id="editButton" class="btn btn-sm btn-primary fw-bold"><i class="bi bi-pencil-square"></i> Editar</button>
+                  <a data-bs-toggle="modal" data-bs-target="#deleteModal" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-trash-fill"></i> Excluir</a>
+                <?php endif; ?>
               <?php endif; ?>
             </div>
         </div>

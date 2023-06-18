@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CoffeeCode\DataLayer\DataLayer;
 use Exception;
-class User extends DataLayer {
+class Users extends DataLayer {
 
     public function __construct() {
         parent::__construct("users" , ["first_name", "last_name", "email", "password"], timestamps:true);

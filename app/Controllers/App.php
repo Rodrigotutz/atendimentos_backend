@@ -2,8 +2,10 @@
 
 namespace App\Controllers;
 
-use App\Models\User;
+use App\Models\Users;
 use App\Models\Calls;
+use App\Models\Situations;
+use App\Models\Systems;
 use DateTime;
 use Rodrigotutz\Controller;
 
@@ -12,20 +14,26 @@ class App extends Controller {
     private $user;
     private $call;
     private $created_at;
+    private $systems;
+    private $situations;
 
     public function __construct($router) {
         parent::__construct($router, dirname(__DIR__, 1). "/Views/pages/");
         if(!isset($_SESSION['userId'])) {
             $this->router->redirect("web.home");
         }
-        $this->user = (new User())->findById($_SESSION['userId']);
-        $this->call = new CAlls();
+        $this->user = (new Users())->findById($_SESSION['userId']);
+        $this->call = new Calls();
         $this->created_at = (new DateTime($this->user->created_at))->format("d/m/Y");
+        $this->systems = new Systems();
+        $this->situations = new Situations();
     }
 
     public function index($data){
         $query = null;
         $registers = 0;
+        $systems = $this->systems->find()->fetch(true);
+        $situations = $this->situations->find()->fetch(true);
 
         if(isset($data['query'])) {
             $query = $data['query'];
@@ -56,9 +64,19 @@ class App extends Controller {
         $this->view->addData([
             "title" => "Atendimentos",
             "calls" => $calls,
-            "registers" => $registers
+            "registers" => $registers,
+            "systems" => $systems,
+            "situations" => $situations
         ]);
         echo $this->view->render("app/index");
+    }
+
+    public function tips(): void {
+        $this->view->addData([
+            "title" => "Dicas"
+        ]);
+
+        echo $this->view->render("app/tips");
     }
     
     public function register($data) {
@@ -105,6 +123,8 @@ class App extends Controller {
     public function preview($data) {
 
         $callId = filter_var($data['id'], FILTER_DEFAULT);
+        $systems = $this->systems->find()->fetch(true);
+        $situations = $this->situations->find()->fetch(true);
 
         if(!$callId) {
             $this->router->redirect("app.index", [
@@ -122,7 +142,9 @@ class App extends Controller {
 
         $this->view->addData([
             "title" => "Veja seu chamado",
-            "call" => $callById
+            "call" => $callById,
+            "systems" => $systems,
+            "situations" => $situations
         ]);
 
         echo $this->view->render("app/preview");

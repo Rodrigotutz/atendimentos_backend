@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use Rodrigotutz\Controller;
-use App\Models\User;
+use App\Models\Users;
 
 class Web extends Controller {
 
@@ -15,7 +15,7 @@ class Web extends Controller {
             $this->router->redirect("app.index");
         }
 
-        $this->user = new User();
+        $this->user = new Users();
     }
 
     public function home(): void {

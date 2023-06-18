@@ -1,21 +1,21 @@
 <!-- Modal -->
-<div class="modal fade text-dark" id="pass-modal" tabindex="-1" aria-labelledby="passmodal" aria-hidden="true">
+<div class="modal fade text-dark" id="newsituation-modal" tabindex="-1" aria-labelledby="newsituation" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header" style="border: none;">
-        <h4 class="modal-title" id="formModal">Altere sua senha</h4>
+        <h4 class="modal-title" id="formModal">Nova Situação</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="container" action="<?= $router->route("auth.newpass") ?>" method="POST">
+        <form class="container" action="<?= $router->route("admin.newsituation") ?>" method="POST">
 
           <div class="mb-3">
-            <label for="password" class="form-label">Senha atual:</label>
-            <input name="password" type="text" class="form-control reg_pass" id="password">
+            <label for="name" class="form-label">Nome</label>
+            <input name="title" type="text" class="form-control" id="name">
           </div>
           <div class="mb-3">
-            <label for="newpass" class="form-label ">Nova Senha:</label>
-            <input name="newpass" type="text" class="form-control" id="newpass">
+            <label for="description" class="form-label">Descrição</label>
+            <textarea name="description" id="description" class="form-control" rows="8"></textarea>
           </div>
           
           <div class="modal-footer" style="border: none;">

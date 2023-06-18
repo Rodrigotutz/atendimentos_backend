@@ -13,6 +13,10 @@ $router->get("/alterarsenha", "Web@alterPass", "web.alterpass");
 $router->get("/novasenha/{email}/{token}", "Web@newKey", "web.newkey");
 $router->post("/novasenha/{email}/{token}", "Web@newKey", "web.newkey");
 
+/********** ROTAS BLOG ********/
+$router->group("blog");
+$router->get('/', "Blog@home", "blog.home");
+
 /********* ROTAS AUTH *********/
 $router->group("auth");
 $router->post("/login", "Auth@login", "auth.login");
@@ -25,6 +29,7 @@ $router->post("/newpass", "Auth@newPass", "auth.newpass");
 /*********ROTAS APP **********/
 $router->group("app");
 $router->get("/", "App@index", "app.index");
+$router->get("/dicas", "App@tips", "app.tips");
 $router->post("/", "App@index", "app.index");
 $router->get("/perfil", "App@me", "app.me");
 $router->get("/deletar/{id}", "App@delete", "app.delete");
@@ -36,6 +41,8 @@ $router->post("/atualizar", "App@update", "app.update");
 /*********ROTAS ADMIN **********/
 $router->group("admin");
 $router->get("/", "Admin@index", "admin.index");
+$router->post("/novosistem", "Admin@newSys", "admin.newsys");
+$router->post("/novasituacao", "Admin@newSituation", "admin.newsituation");
 
 $router->group("api/v1");
 $router->get("/", "Api@show", "api.show");

@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\User;
+use App\Models\Users;
 use Rodrigotutz\Controller;
 use App\Helpers\Mail;
 
@@ -13,7 +13,7 @@ class Auth extends Controller {
 
     public function __construct($router) {
         parent::__construct($router, dirname(__DIR__, 1). "/Views/pages");
-        $this->user = new User();
+        $this->user = new Users();
         $this->email = new Mail();
     }
 
@@ -38,12 +38,17 @@ class Auth extends Controller {
         $this->user->password = $password;
         $this->user->confirm_token = md5(rand());
 
+        if(!$this->user->save()) {
+            $this->router->redirect("web.home", ["error" => $this->user->fail()->getMessage()]);
+        }
+        
         $this->email->add(
             "Confirme a criação da sua conta",
             $this->view->render("mail/email", [
                 "user" => $this->user,
                 "messageTitle" => "Sua conta foi criada!",
                 "message" => "Para continuar basta clicar no botão abaixo para confirmar seu e-mail",
+                "action" => "Confirmar e-mail",
                 "link" => $this->router->route("auth.confirm", [
                     "email" => $this->user->email,
                     "token" => $this->user->confirm_token
@@ -55,10 +60,6 @@ class Auth extends Controller {
 
         if(!$this->email->send()) {
             $this->router->redirect("web.home", ["error" => "not-allowed"]);
-        }
-        
-        if(!$this->user->save()) {
-            $this->router->redirect("web.home", ["error" => $this->user->fail()->getMessage()]);
         }
     
         $this->router->redirect("web.home", ["success" => "user-created"]);
@@ -181,6 +182,7 @@ class Auth extends Controller {
                 "user" => $this->user,
                 "messageTitle" => "Altere a sua senha",
                 "message" => "Para alterar a sua senha basta clicar no botão abaixo",
+                "action" => "Alterar senha",
                 "link" => $this->router->route("web.newkey", [
                     "email" => $userByEmail->email,
                     "token" => $userByEmail->confirm_token
