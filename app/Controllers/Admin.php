@@ -26,17 +26,20 @@ class Admin extends Controller {
 
         $this->systems = new Systems();
         $this->situations = new Situations();
+        $this->users = new Users();
     }
 
     public function index() {
 
         $systems = $this->systems->find()->fetch(true);
         $situations = $this->situations->find()->fetch(true);
+        $users = $this->users->find()->fetch(true);
 
         $this->view->addData([
             "title" => "Página Adminstrativa",
             "systems" => $systems,
-            "situations" => $situations
+            "situations" => $situations,
+            "users" => $users
         ]);
         echo $this->view->render("admin/index");
     }
@@ -90,6 +93,38 @@ class Admin extends Controller {
         
         $this->router->redirect("admin.index", [
             "success" => "situation-created"
+        ]);
+    }
+
+    public function newuser($data) {
+
+        $first_name = filter_var($data['first_name'], FILTER_DEFAULT);
+        $last_name = filter_var($data['last_name'], FILTER_DEFAULT);
+        $email = filter_var($data['email'], FILTER_DEFAULT);
+        $password = filter_var($data['password'], FILTER_DEFAULT);
+        $type = filter_var($data['type'], FILTER_DEFAULT);
+
+        if(!$first_name || !$last_name || !$email || !$password || !$type) {
+            $this->router->redirect("admin.index",[
+                "error" => "invalid-fields"
+            ]);
+        }
+
+        $this->users->first_name = $first_name;
+        $this->users->last_name = $last_name;
+        $this->users->email = $email;
+        $this->users->password = $password;
+        $this->users->type = $type;
+        $this->users->confirmed_at = date("Y/m/d");
+
+        if(!$this->users->save()) {
+            $this->router->redirect("admin.index",[
+                "error" => $this->users->fail()->getMessage()
+            ]);
+        }
+
+        $this->router->redirect("admin.index", [
+            "success" => "user-admin-created"
         ]);
     }
 }

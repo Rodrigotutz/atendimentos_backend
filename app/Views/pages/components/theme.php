@@ -7,7 +7,6 @@
         <title><?= $title ?></title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="<?= asset("css/google-icons.css") ?>">
-        
         <link rel="stylesheet" href="<?= asset("css/bootstrap.min.css") ?>">
         <link rel="stylesheet" href="<?= asset("css/style.css") ?>">
         <script src="//code.jivosite.com/widget/yMCW4wGa9c" async></script>
@@ -22,7 +21,7 @@
             <?php $this->insert("components/sidebar") ?>
         </nav>
 
-        <main>
+        <main class="pt-5">
             <?= $this->section("content") ?>
         </main>
         

@@ -1,6 +1,6 @@
 <?php $this->layout("components/theme") ?>
  
-<div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 90vh;">
+<div class="d-flex flex-column justify-content-center align-items-center" style="min-height: 80vh;">
     <h3 class="mb-4">Altere a sua senha</h3>
     <form method="POST">
         <div class="mb-3" style="width: 400px;">

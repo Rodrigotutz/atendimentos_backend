@@ -43,9 +43,10 @@ $router->group("admin");
 $router->get("/", "Admin@index", "admin.index");
 $router->post("/novosistem", "Admin@newSys", "admin.newsys");
 $router->post("/novasituacao", "Admin@newSituation", "admin.newsituation");
-
+$router->post("/novousuario", "Admin@newUser", "admin.newuser");
 $router->group("api/v1");
 $router->get("/", "Api@show", "api.show");
+$router->get("/pesquisa/{query}", "Api@query", "api.query");
 
 /******* ROTAS DE ERROS ********/
 $router->group("oops");

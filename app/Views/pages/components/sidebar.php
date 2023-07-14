@@ -1,5 +1,5 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-lg bg-trasparent text-white" data-bs-toggle="modal" data-bs-target="#modal">
+<button type="button" class="btn btn-lg bg-trasparent text-white fixed-top text-start" style="width: 50px;" data-bs-toggle="modal" data-bs-target="#modal">
     <i class="bi bi-list"></i>
 </button>
 

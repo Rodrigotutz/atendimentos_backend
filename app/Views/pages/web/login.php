@@ -1,6 +1,6 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="login-container shadow-lg">
+<div class="login-container">
     <form class="login-form bg-white text-dark p-4 border rounded-3  shadow-lg" action="<?= $router->route("auth.login") ?>" method="POST">
         <h2 class="text-center">Entrar</h2>
 
