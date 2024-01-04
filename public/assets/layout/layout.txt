@@ -1,0 +1,27 @@
+
+Atendimento:105009
+Relator:Rodrigo Tutz
+Email:rodrigo@rodrigotutz.com
+Entidade:PM Nhandeara
+Sistema:SCPI 8
+Situação:Finalizado
+Caso:Cliente Relata erro ao empenhar
+Geral:S
+*
+Atendimento:109559
+Relator:Marcos Paiva
+Email:marcos@paiva.com
+Entidade:PM Nova Granda
+Sistema:SCPI 9
+Situação:Finalizado
+Caso:Dei 3 mortal Carpado
+Geral:S
+*
+Atendimento:115849
+Relator:Pedro Silva
+Email:pedro@pedro.com.br
+Entidade:CM Ida Iolanda
+Sistema:SGM
+Situação:Em Andamento
+Caso:Cliente relata teste
+Geral:N

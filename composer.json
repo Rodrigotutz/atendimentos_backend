@@ -1,0 +1,35 @@
+{
+    "name": "rodrigotutz/tutzwork",
+    "description": "Framework Rodrigo Tutz",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Rodrigo Antunes",
+            "email": "rodrigoantunestutz@gmail.com", 
+            "homepage": "http://rodrigotutz.rf.gd",
+             "role": "Developer"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\" : "app/"
+        },
+        "files": [
+            "app/Helpers/DotEnv.php",
+            "app/Helpers/Config.php",
+            "app/Helpers/Helpers.php"
+        ]
+    },
+    "require": {
+        "coffeecode/router": "^2.0",
+        "vlucas/phpdotenv": "^5.5",
+        "coffeecode/datalayer": "1.1.8",
+        "league/plates": "^3.4",
+        "rodrigotutz/controller": "^1.0",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.2"
+    }
+}

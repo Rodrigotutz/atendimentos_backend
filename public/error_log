@@ -1,0 +1,279 @@
+[10-Aug-2023 22:05:30 America/Fortaleza] PHP Warning:  Header to delete may not contain colon. in /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php on line 4
+[10-Aug-2023 22:05:30 America/Fortaleza] PHP Warning:  Header to delete may not contain colon. in /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php on line 4
+[10-Aug-2023 22:25:55 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[10-Aug-2023 22:25:59 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[10-Aug-2023 22:26:02 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[10-Aug-2023 22:26:06 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[10-Aug-2023 22:26:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[10-Aug-2023 22:26:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[10-Aug-2023 22:26:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:26:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:27:26 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:27:26 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:27:37 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:27:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:08 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:28:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:28:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 36
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 37
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 38
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 39
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 40
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 41
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 42
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Undefined variable $data in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Upload.php on line 43
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:28:50 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:31:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:31:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:31:13 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:31:13 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:31:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:31:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:31:32 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:31:32 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:31:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:31:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[10-Aug-2023 22:34:23 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[10-Aug-2023 22:34:23 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:04:24 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:04:24 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:04:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:04:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:04:47 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:04:47 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:04:52 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:04:52 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:04:58 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:04:58 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:07:05 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:07:05 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:07:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 14:07:09 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 14:07:23 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 14:07:23 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 14:07:34 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:07:34 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:07:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:07:39 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:24:47 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:24:47 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:24:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:24:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:24:54 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:24:54 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:24:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:24:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:25:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:25:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:25:08 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:25:08 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:25:12 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 14:25:12 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 14:25:33 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 14:25:33 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 14:26:20 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:26:20 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:26:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:26:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:27:13 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:27:13 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:27:22 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 42
+[11-Aug-2023 14:27:22 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 54
+[11-Aug-2023 14:27:31 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:27:31 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:27:35 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 42
+[11-Aug-2023 14:27:35 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 54
+[11-Aug-2023 14:27:49 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:27:49 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:29:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:29:10 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:29:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:29:57 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:30:04 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:30:04 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:30:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:30:11 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:30:16 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:30:16 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:30:27 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:30:27 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:30:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:30:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:31:06 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 42
+[11-Aug-2023 14:31:06 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/app/preview.php on line 54
+[11-Aug-2023 14:31:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 45
+[11-Aug-2023 14:31:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/components/call-modal.php on line 56
+[11-Aug-2023 14:48:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 15:16:29 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:02:28 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:03:00 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:03:05 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:03:05 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:03:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:03:41 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:04:42 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:04:42 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:05:31 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:05:31 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:06:14 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[11-Aug-2023 19:06:14 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:06:14 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:06:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:06:30 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 19:06:34 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[11-Aug-2023 19:06:34 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 29
+[11-Aug-2023 19:06:34 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 44
+[11-Aug-2023 22:16:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[12-Aug-2023 00:00:40 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[12-Aug-2023 00:00:58 America/Sao_Paulo] PHP Warning:  Undefined property: App\Controllers\App::$created_at in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php on line 183
+[12-Aug-2023 00:01:27 America/Sao_Paulo] PHP Warning:  Undefined property: App\Controllers\App::$created_at in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php on line 183
+[12-Aug-2023 00:01:44 America/Sao_Paulo] PHP Warning:  Undefined property: App\Controllers\App::$created_at in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php on line 183
+[12-Aug-2023 00:03:49 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[14-Aug-2023 08:39:26 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[03-Sep-2023 11:55:46 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[03-Sep-2023 11:56:21 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, null returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[03-Sep-2023 11:56:26 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, null returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[03-Sep-2023 11:56:53 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, null returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[03-Sep-2023 11:56:56 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, null returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[03-Sep-2023 11:57:04 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, null returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[03-Sep-2023 12:15:49 America/Sao_Paulo] PHP Fatal error:  Uncaught TypeError: App\Models\Users::calls(): Return value must be of type App\Models\Calls, array returned in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php:14
+Stack trace:
+#0 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php(52): App\Models\Users->calls()
+#1 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/RouterTrait.php(114): App\Controllers\App->index(Array)
+#2 /home4/rodr2990/atendimentos.rodrigotutz.com/vendor/coffeecode/router/src/Dispatch.php(197): CoffeeCode\Router\Dispatch->execute()
+#3 /home4/rodr2990/atendimentos.rodrigotutz.com/app/Router/web.php(74): CoffeeCode\Router\Dispatch->dispatch()
+#4 /home4/rodr2990/atendimentos.rodrigotutz.com/bootstrap/app.php(5): require('/home4/rodr2990...')
+#5 /home4/rodr2990/atendimentos.rodrigotutz.com/public/index.php(7): require('/home4/rodr2990...')
+#6 {main}
+  thrown in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Models/Users.php on line 14
+[22-Sep-2023 08:44:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[05-Oct-2023 17:20:51 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[23-Oct-2023 09:55:54 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[23-Oct-2023 09:56:08 America/Sao_Paulo] PHP Warning:  foreach() argument must be of type array|object, null given in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Views/pages/admin/index.php on line 14
+[29-Dec-2023 11:53:00 America/Sao_Paulo] PHP Warning:  Undefined array key "password" in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Admin.php on line 110
+[29-Dec-2023 11:53:09 America/Sao_Paulo] PHP Warning:  Undefined array key "password" in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Admin.php on line 110
+[29-Dec-2023 11:55:29 America/Sao_Paulo] PHP Warning:  Undefined array key "password" in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/Admin.php on line 110
+[03-Jan-2024 09:20:02 America/Sao_Paulo] PHP Warning:  Attempt to read property "system" on null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php on line 158
+[03-Jan-2024 09:20:02 America/Sao_Paulo] PHP Warning:  Attempt to read property "situation" on null in /home4/rodr2990/atendimentos.rodrigotutz.com/app/Controllers/App.php on line 159
