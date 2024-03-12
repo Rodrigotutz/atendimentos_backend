@@ -122,9 +122,8 @@ class App extends Controller {
         $this->call->system = $system;
         $this->call->situation = $situation;
         $this->call->call_case = $case;
-
         
-        if(isset($data['generalError'])) {
+        if($data['generalError'] != null) {
             $this->call->general_error = "S";
         } else {
             $this->call->general_error = "N";
