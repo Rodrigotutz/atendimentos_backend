@@ -47,7 +47,7 @@ class App extends Controller {
             if($_SESSION['userType'] == 'admin') {
                 $calls = $this->call->find()->order("id DESC")->fetch(true);
             }
-
+            
             if($_SESSION['userType'] == 'user') {
                 $calls = $this->user->calls();
             }
@@ -123,12 +123,11 @@ class App extends Controller {
         $this->call->situation = $situation;
         $this->call->call_case = $case;
         
-        if($data['generalError'] != null) {
-            $this->call->general_error = "S";
+        if(isset($data['generalError'])) {
+            $this->call->general_error = true;
         } else {
-            $this->call->general_error = "N";
+            $this->call->general_error = false;
         }
-        
 
         if(!$this->call->save()) {
             $this->router->redirect("app.index", [
@@ -164,6 +163,7 @@ class App extends Controller {
             ]);
         }
 
+        /*
         $this->view->addData([
             "title" => "Veja seu chamado",
             "call" => $callById,
@@ -172,6 +172,9 @@ class App extends Controller {
         ]);
 
         echo $this->view->render("app/preview");
+        */
+        
+        echo json_encode($callById->data());
     }
 
     public function me(): void {
@@ -213,9 +216,9 @@ class App extends Controller {
         $callById->call_case =$data['case'];
         
         if(isset($data['generalError'])) {
-            $callById->general_error = 1;
+            $callById->general_error = true;
         } else {
-            $callById->general_error = 0;
+            $callById->general_error = false;
         }
 
         $callById->save();

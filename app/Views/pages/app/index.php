@@ -1,10 +1,10 @@
 <?php $this->layout("components/theme") ?>
 
-<div class="container d-flex flex-row justify-content-between align-items-center">
+<div class="container d-flex justify-content-between align-items-center">
     <h3>Atendimentos</h3>
 </div>
 
-<div class="container mt-5 d-flex justify-content-between align-items-center">    
+<div class="container mt-5 d-flex justify-content-between align-items-center ">    
     <?php if($_SESSION['userType'] != "guest"): ?>
         <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#call-modal"><i class="bi bi-plus-square-fill"></i> Novo Atendimento</a>       
     <?php endif; ?>
@@ -17,9 +17,9 @@
                 <input type="date" name="date" class="form-control form-control-sm"> 
             </div>
         </form>
-      <?php if($_SESSION['userType'] != "guest"): ?>
-        <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#import-modal"><i class="bi bi-arrow-down-square-fill"></i></a>       
-    <?php endif; ?>
+        <?php if($_SESSION['userType'] != "guest"): ?>
+            <a href="" class="btn btn-sm btn-light fw-bold"  data-bs-toggle="modal" data-bs-target="#import-modal"><i class="bi bi-arrow-down-square-fill"></i></a>       
+        <?php endif; ?>
     </div>
 </div>
 
@@ -32,7 +32,7 @@
         </div>
     <?php else: ?>
     <div class="table-responsive">
-        <table class="table table-dark table-striped table-hover">
+        <table class="table table-dark table-striped table-hover" id="callTable">
             <thead>
                 <tr>
                     <th scope="col">Atendimento</th>
@@ -48,13 +48,12 @@
 
             <?php foreach($calls as $call): ?>
                 <tbody>
-                <?php if($call->general_error === 1): ?>
+                <?php if($call->general_error == true): ?>
                     <tr class="text-danger">
                 <?php else: ?>
                     <tr>
                 <?php endif; ?>
-
-                        <th scope="row"><?= $call->at_number ?></th>
+                        <th><?= $call->at_number ?></th>
                         <td><?= $call->name ?></td>
                         <td><?= $call->system?></td>
                         <td><?= $call->entity ?></td>
@@ -64,9 +63,15 @@
                         <td><?= (new DateTime($call->created_at))->format("d/m/Y")?></td>
                         
                         <?php if($call->general_error === 1): ?>
-                            <td><a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-eye-fill"></i></a></td>
+                            <td>
+                                <!--<a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-eye-fill"></i></a>-->
+                                <button id="updateCall" class="btn btn-sm btn-light fw-bold editButton" data-id="<?= $call->id ?>" data-bs-toggle="modal" data-bs-target="#updatecall-modal" ><i class="bi bi-pen-fill"></i></button>
+                            </td>
                         <?php else: ?>
-                            <td><a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-light fw-bold"><i class="bi bi-eye-fill"></i></a></td>
+                            <td>
+                                <!--<a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-light fw-bold"><i class="bi bi-eye-fill"></i></a>-->
+                                <button id="updateCall" class="btn btn-sm btn-light fw-bold editButton" data-id="<?= $call->id ?>" data-bs-toggle="modal" data-bs-target="#updatecall-modal" ><i class="bi bi-pen-fill"></i></button>   
+                            </td>
                         <?php endif; ?>
                     </tr>
                 </tbody>
@@ -88,5 +93,9 @@
 
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 <?php $this->insert("components/call-modal") ?>
+<?php $this->insert("components/updatecall-modal") ?>
 <?php $this->insert("components/import-modal") ?>
+

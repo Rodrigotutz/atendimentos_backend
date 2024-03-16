@@ -40,26 +40,14 @@ class Upload extends Controller {
             $call->email = $data['Email'];
             $call->entity = $data['Entidade'];
             $call->call_case = $data['Caso'];
+            $call->system = $data['Sistema'];
+            $call->situation = $data['Situação'];
+
 
             if($data['Geral'] === "S") {
-                $call->general_error = 1;
+                $call->general_error = true;
             }else {
-                $call->general_error = 0;
-            }
-
-            $situations = (new Situations())->find()->fetch(true);
-            $systems = (new Systems())->find()->fetch(true);
-
-            foreach($situations as $situation) {
-                if($situation->title === $data['Situação']) {
-                    $call->situation = $situation->title;
-                }
-            }
-
-            foreach($systems as $system) {
-                if($system->title === $data['Sistema']) {
-                    $call->system = $system->title;
-                }
+                $call->general_error = false;
             }
             
             if(!$call->save()) {

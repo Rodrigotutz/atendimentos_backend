@@ -65,10 +65,6 @@
           getUrl = `http://localhost/atendimentos/backend/admin/show/user/`
           deleteUrl = `http://localhost/atendimentos/backend/admin/delete/user/`
           deleteLink = `http://localhost/atendimentos/backend/admin?success=user-deleted`
-        } else {
-          getUrl = `https://atendimentos.rodrigotutz.com/admin/show/user/`
-          deleteUrl =`https://atendimentos.rodrigotutz.com/admin/delete/user/`
-          deleteLink = `https://atendimentos.rodrigotutz.com/admin?success=user-deleted`
         }
 
         deleteUser.addEventListener("click", (e) => {

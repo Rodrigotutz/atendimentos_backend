@@ -38,7 +38,7 @@
             <div class="mb-3">
               <label for="system" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
               <select id="system" class="form-select" name="system" disabled>
-                  <option value="<?= $call->system ?>"><?= $call->system ?></option>
+                  <option value="<?= $call->system ?>" disabled selected hidden><?= $call->system ?></option>
                 <?php foreach($systems as $system): ?>
                   <option value="<?= $system->title ?>"><?= $system->title ?></option>
                 <?php endforeach; ?>
@@ -50,7 +50,7 @@
             <div class="mb-3">
               <label for="situation" class="form-label"> <span class="text-danger">*</span> Situação:</label>
               <select id="situation" class="form-select" name="situation" disabled>
-                  <option value="<?= $call->situation ?>"><?= $call->situation ?></option>
+                  <option value="<?= $call->situation ?>" disabled selected hidden><?= $call->situation ?></option>
                 <?php foreach($situations as $situation): ?>
                   <option value="<?= $situation->title ?>"><?= $situation->title ?></option>
                 <?php endforeach; ?>

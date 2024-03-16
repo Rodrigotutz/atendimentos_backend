@@ -10,7 +10,7 @@
                 <h4>Usuários:</h4>
                 <div class="d-flex gap-2">
                     <select id="users" class="form-select text-dark" onchange="userSelected()">
-                        <option selected>--- Selecione o usuário ---</option>
+                        <option selected disabled hidden>--- Selecione o usuário ---</option>
                         <?php foreach($users as $user): ?>
                             <option value="<?= $user->id ?>"><?= $user->first_name ?> <?= $user->last_name ?></option>
                         <?php endforeach; ?>
@@ -25,7 +25,7 @@
             <h4>Sistemas:</h4>
             <div class="d-flex gap-2">
                 <select id="systems" class="form-select" onchange="systemSelected()">
-                    <option selected>-- Selecione um Sistema ---</option>
+                    <option disabled selected hidden>-- Selecione um Sistema ---</option>
                     <?php foreach($systems as $system): ?>
                         <option value="<?= $system->id ?>"><?= $system->title ?></option>
                     <?php endforeach; ?>
@@ -40,7 +40,7 @@
             <h4>Situações:</h4>
             <div class="d-flex gap-2">
                 <select id="situations" class="form-select" onchange="situationSelected()">
-                    <option selected>--- Selecione a Situação ---</option>
+                    <option disabled selected hidden>--- Selecione a Situação ---</option>
                     <?php foreach($situations as $situation): ?>
                         <option value="<?= $situation->id ?>"><?= $situation->title ?></option>
                     <?php endforeach; ?>

@@ -28,7 +28,7 @@
           <?php if(!isset($_SESSION['userId'])): ?>
             <li class="nav-item"><a href="<?= $router->route("web.home") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-person-circle"></i> Login</a></li>
             <?php endif; ?>
-            <li class="nav-item"><a href="https://atendimentos-frontend.vercel.app/" class="nav-link text-dark fw-bold" target="__blank"><i class="fa-brands fa-vuejs"></i> Versão em Vue 3</a></li>
+            <li class="nav-item"><a href="http://localhost:8080/atendimentos" class="nav-link text-dark fw-bold" target="__blank"><i class="fa-brands fa-vuejs"></i> Versão em Vue 3</a></li>
           <li class="nav-item"><a href="<?= $router->route("blog.home") ?>" class="nav-link text-dark fw-bold"><i class="bi bi-newspaper"></i> Novidades</a></li>
           <li class="nav-item"><a href="https://github.com/Rodrigotutz/atendimentos_backend" target="_blank" class="nav-link text-dark fw-bold"><i class="bi bi-github"></i> Github</a></li>
           <?php if(isset($_SESSION['userId'])): ?>
