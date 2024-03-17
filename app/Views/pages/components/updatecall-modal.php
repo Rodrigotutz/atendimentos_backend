@@ -7,7 +7,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="container" action="<?= $router->route("app.register") ?>" method="POST">
+        <form class="container" action="<?= $router->route("app.update") ?>" method="POST">
+
+        <input type="hidden" id="callId" name="id">
 
         <div class="row">
           <div class="col-6">
@@ -27,7 +29,7 @@
           <div class="col-6">
             <div class="mb-3">
               <label for="email" class="form-label"> <span class="text-danger">*</span> Email:</label>
-              <input name="email" type="email" class="form-control" id="updateCallEmail">
+              <input type="email" class="form-control" id="updateCallEmail" disabled readonly>
             </div>
           </div>
 
@@ -40,8 +42,8 @@
 
           <div class="col-6"> 
             <div class="mb-3">
-              <label for="system" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
-              <select id="system" class="form-select" name="updateCallSystem">
+              <label for="updateCallSystem" class="form-label"> <span class="text-danger">*</span> Sistema:</label>
+              <select id="updateCallSystem" class="form-select" name="system">
                 <?php foreach($systems as $systems): ?>
                     <option value="<?= $systems->title ?>"><?= $systems->title ?></option>
                 <?php endforeach; ?>
@@ -73,7 +75,7 @@
           
           <div class="modal-footer" style="border: none;">
             <button class="btn btn-danger" id="deleteCall">Excluir</button>
-            <button type="submit" class="btn btn-dark">Atualizar</button>
+            <button type="submit" class="btn btn-success">Atualizar</button>
           </div>
 
         </form>
@@ -95,6 +97,7 @@
   $(document).ready(function() {
     $('#callTable').on('click', '.editButton', function() {
       var callId = $(this).data('id');
+      $("#callId").val(callId)
 
       $("#deleteCall").click((e) => {
         e.preventDefault();

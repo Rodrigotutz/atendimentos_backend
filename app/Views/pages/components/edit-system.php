@@ -19,7 +19,7 @@
           </div>
           
           <div class="modal-footer" style="border: none;">
-            <button type="submit" class="btn btn-dark">Alterar</button>
+            <button type="submit" class="btn btn-success">Alterar</button>
             <button id="deleteSistem" class="btn btn-danger">Excluir</button>
           </div>
         </form>

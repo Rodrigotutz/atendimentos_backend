@@ -51,6 +51,7 @@ $router->post("/novousuario", "Admin@newUser", "admin.newuser");
 
 $router->get("/show/user/{id}", "Admin@getUser", "admin.getuser");
 $router->post("/delete/user/{id}", "Admin@deleteUser", "admin.deleteuser");
+$router->post("/update/user/{data}", "Admin@updateUser", "admin.updateuser");
 
 $router->get("/show/situation/{id}", "Admin@getSituation", "admin.getsituation");
 $router->post("/delete/situation/{id}", "Admin@deleteSituation", "admin.deletesituation");

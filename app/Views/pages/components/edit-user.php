@@ -7,8 +7,9 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form class="container" action="<?= $router->route("admin.newuser") ?>" method="POST">
-        <input type="hidden" id="editedUserId">
+        <form class="container" action="<?= $router->route("admin.updateuser") ?>" method="POST">
+        <input type="hidden" id="editedUserId" name="id">
+        <input type="hidden" id="editedUserPass" name="password">
           <div class="row">
             <div class="mb-3 col-6">
               <label for="first_name" class="form-label">Nome:</label>
@@ -23,8 +24,8 @@
 
           <div class="row">
             <div class="mb-3 col-8">
-            <label for="email" class="form-label"> Email:</label>
-            <input name="email" type="email" class="form-control" id="editedUserEmail" readonly>
+              <label for="editedUserEmail" class="form-label"> Email:</label>
+              <input type="email" name="email" class="form-control" id="editedUserEmail"  readonly>
             </div>
 
             <div class="mb-3 col-4">
@@ -39,7 +40,7 @@
           </div>
 
           <div class="modal-footer" style="border: none;">
-            <button type="submit" class="btn btn-dark">Alterar</button>
+            <button type="submit" class="btn btn-success">Alterar</button>
             <button  id="deleteUser" class="btn btn-danger">Excluir</button>
           </div>
         </form>
@@ -52,11 +53,6 @@
     function userSelected() {
         let select = document.querySelector("#users")
         let userModal = document.querySelector("#userModal").classList.remove('d-none')
-        let editUserId = document.querySelector("#editedUserId")
-        let editUserName= document.querySelector("#editedUserName")
-        let editUserLastName = document.querySelector("#editedUserLastName")
-        let editUserEmail = document.querySelector("#editedUserEmail")
-        let editUserType = document.querySelector("#editUserType")
         let optionValue = select.options[select.selectedIndex]
         let value = optionValue.value
         let deleteUser = document.querySelector("#deleteUser")
@@ -70,6 +66,7 @@
         deleteUser.addEventListener("click", (e) => {
           e.preventDefault();
           $(function() {
+            $(editedUserId).val(value)
             $.ajax({
               method: "POST",
               url: deleteUrl + value,
@@ -86,11 +83,12 @@
             url: getUrl + value,
             success: function(result) {
               var user = JSON.parse(result)
-              editUserId.value = user.id
-              editUserName.value = user.first_name
-              editUserLastName.value = user.last_name
-              editUserEmail.value = user.email
-              editUserType.value = user.type
+              $("#editedUserId").val(user.id)
+              $("#editedUserPass").val(user.password)
+              $("#editedUserName").val(user.first_name)
+              $("#editedUserLastName").val(user.last_name)
+              $("#editedUserEmail").val(user.email)
+              $("#editUserType").val(user.type)
             }
           })
         })

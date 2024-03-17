@@ -61,18 +61,10 @@
                         <td><?= $call->situation?></td>
 
                         <td><?= (new DateTime($call->created_at))->format("d/m/Y")?></td>
-                        
-                        <?php if($call->general_error === 1): ?>
-                            <td>
-                                <!--<a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-danger fw-bold"><i class="bi bi-eye-fill"></i></a>-->
-                                <button id="updateCall" class="btn btn-sm btn-light fw-bold editButton" data-id="<?= $call->id ?>" data-bs-toggle="modal" data-bs-target="#updatecall-modal" ><i class="bi bi-pen-fill"></i></button>
-                            </td>
-                        <?php else: ?>
-                            <td>
-                                <!--<a href="<?= $router->route("app.preview", ["id" => $call->id]) ?>" class="btn btn-sm btn-light fw-bold"><i class="bi bi-eye-fill"></i></a>-->
-                                <button id="updateCall" class="btn btn-sm btn-light fw-bold editButton" data-id="<?= $call->id ?>" data-bs-toggle="modal" data-bs-target="#updatecall-modal" ><i class="bi bi-pen-fill"></i></button>   
-                            </td>
-                        <?php endif; ?>
+                            
+                        <td>
+                            <button id="updateCall" class="btn btn-sm btn-light fw-bold editButton" data-id="<?= $call->id ?>" data-bs-toggle="modal" data-bs-target="#updatecall-modal" ><i class="bi bi-pen-fill"></i></button>
+                        </td>
                     </tr>
                 </tbody>
             <?php endforeach; ?>
@@ -80,10 +72,12 @@
     </div>
     
     <div class="d-flex justify-content-between">
-        <div>
-            <span>Legenda:</span>
-            <span class="text-danger">Erro Geral</span>
-        </div>
+        <?php if($call->general_error == true): ?>
+            <div>
+                <span>Legenda:</span>
+                <span class="text-danger">Erro Geral</span>
+            </div>
+        <?php endif; ?>
         <div>
             <span>Total de Chamados:</span>
             <span><?= $registers ?></span>

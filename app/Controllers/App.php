@@ -209,7 +209,6 @@ class App extends Controller {
         
         $callById->at_number = $data['atNumber'];
         $callById->name = $data['name'];
-        $callById->email = $data['email'];
         $callById->entity = $data['entity'];
         $callById->system = $data['system'];
         $callById->situation = $data['situation'];
@@ -223,8 +222,7 @@ class App extends Controller {
 
         $callById->save();
 
-        $this->router->redirect("app.preview", [
-            "id" => $data['id'],
+        $this->router->redirect("app.index", [
             "success" => "call-updated"
         ]);
         

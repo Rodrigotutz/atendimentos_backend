@@ -102,7 +102,7 @@ class Admin extends Controller {
         ]);
     }
 
-    public function newuser($data) {
+    public function newUser($data) {
 
         $first_name = filter_var($data['first_name'], FILTER_DEFAULT);
         $last_name = filter_var($data['last_name'], FILTER_DEFAULT);
@@ -157,6 +157,40 @@ class Admin extends Controller {
         $userId = filter_var($id['id'], FILTER_DEFAULT);
         $user = $this->users->findById($userId);
         $user->destroy();
+    }
+
+    public function updateUser($data) {
+
+        $id = filter_var($data['id'], FILTER_VALIDATE_INT);
+        $password = filter_var($data['password'], FILTER_DEFAULT);
+        $first_name = filter_var($data['first_name'], FILTER_DEFAULT);
+        $last_name = filter_var($data['last_name'], FILTER_DEFAULT);
+        $email = filter_var($data['email'], FILTER_VALIDATE_EMAIL);
+        $type = filter_var($data['type'], FILTER_DEFAULT);
+
+
+        if(!$first_name || !$last_name ||!$email || !$type) {
+            $this->router->redirect("admin.index",[
+                "error" => "invalid-fields"
+            ]);
+        }
+
+        $this->users->id = $id;
+        $this->users->password = $password;
+        $this->users->first_name = $first_name;
+        $this->users->last_name = $last_name;
+        $this->users->email = $email;
+        $this->users->type = $type;
+
+        if(!$this->users->save()) {
+            $this->router->redirect("admin.index",[
+                "error" => $this->users->fail()->getMessage()
+            ]);
+        }
+
+        $this->router->redirect("admin.index", [
+            "success" => "user-updated"
+        ]);
     }
 
     public function deleteSystem($id) {
